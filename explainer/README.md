@@ -28,7 +28,7 @@
 ## Authors
 *   Shivani Sharma
 *   Josh Karlin
-
+*  Damarcus Jones Sr 
 ## Introduction
 In a web that has its cookies and storage partitioned by top-frame site, there are occasions (such as [Interest group based advertising](https://github.com/WICG/turtledove) or [Conversion Lift Measurements](https://github.com/w3c/web-advertising/blob/master/support_for_advertising_use_cases.md#conversion-lift-measurement)) when it would be useful to display content from different partitions in the same page. This can only be allowed if the documents that contain data from different partitions are isolated from each other such that they're visually composed on the page, but unable to communicate with each other. Iframes do not suit this purpose since they have several communication channels with their embedding frame (e.g., postMessage, URLs, size attribute, name attribute, etc.). We propose fenced frames, a new element to embed documents on a page, that explicitly prevents communication between the embedder and the frame.
 
